@@ -108,6 +108,12 @@ public class RegisterController : MonoBehaviour
             input = input + "0";
         }
     }
+
+    public void PressedReset()
+    {
+        input = "";
+    }
+
     public void PressedEnter()
     {
         if (input.Length == 5)
