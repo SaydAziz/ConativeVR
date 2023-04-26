@@ -193,7 +193,7 @@ GameObject:
   - component: {fileID: 1485542007995427654}
   - component: {fileID: 1485542007995427655}
   - component: {fileID: 1485542007995427704}
-  - component: {fileID: 1485542007995427705}
+  - component: {fileID: 6603280534009975980}
   - component: {fileID: 1485542007995427653}
   m_Layer: 0
   m_Name: MovingCollider
@@ -342,7 +342,7 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &1485542007995427705
+--- !u!114 &6603280534009975980
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -351,7 +351,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1485542007995427707}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1d85d791c255cec48af2668001756336, type: 3}
+  m_Script: {fileID: 11500000, guid: 6cdf3a2290ff323488cb6a1141e961d4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   button: {fileID: 1485542007425889516}
@@ -414,6 +414,8 @@ MonoBehaviour:
   m_Deactivated:
     m_PersistentCalls:
       m_Calls: []
+  m_StartingHoverFilters: []
+  m_StartingSelectFilters: []
   m_OnFirstHoverEntered:
     m_PersistentCalls:
       m_Calls: []
@@ -482,6 +484,9 @@ MonoBehaviour:
   m_ForceGravityOnDetach: 0
   m_RetainTransformParent: 1
   m_AttachPointCompatibilityMode: 0
+  m_StartingSingleGrabTransformers: []
+  m_StartingMultipleGrabTransformers: []
+  m_AddDefaultGrabTransformers: 1
 --- !u!1 &1485542008283317161
 GameObject:
   m_ObjectHideFlags: 0

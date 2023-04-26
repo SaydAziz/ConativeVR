@@ -13,9 +13,8 @@ GameObject:
   - component: {fileID: 5157448439438530072}
   - component: {fileID: 5157448439438530075}
   - component: {fileID: 5157448439438530076}
+  - component: {fileID: 5759529984576611692}
   - component: {fileID: 5157448439438530079}
-  - component: {fileID: 5157448439438530077}
-  - component: {fileID: -5364315210025600511}
   m_Layer: 0
   m_Name: MovingCube
   m_TagString: Untagged
@@ -117,6 +116,24 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &5759529984576611692
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5157448439438530074}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8582a8df6da2a1f42bf7ba2341e23afe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CubetobeMoved: {fileID: 0}
+  speed: 0
+  Target: {fileID: 0}
+  buttonVr: {fileID: 0}
+  Endzone: {fileID: 0}
+  endZoneReached: 0
 --- !u!114 &5157448439438530079
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -169,6 +186,8 @@ MonoBehaviour:
   m_Deactivated:
     m_PersistentCalls:
       m_Calls: []
+  m_StartingHoverFilters: []
+  m_StartingSelectFilters: []
   m_OnFirstHoverEntered:
     m_PersistentCalls:
       m_Calls: []
@@ -237,34 +256,6 @@ MonoBehaviour:
   m_ForceGravityOnDetach: 0
   m_RetainTransformParent: 1
   m_AttachPointCompatibilityMode: 0
---- !u!114 &5157448439438530077
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5157448439438530074}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7f601f55b5a6cf94495444528b158664, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CubetobeMoved: {fileID: 5157448439438530074}
-  speed: 1
-  Target: {fileID: 0}
-  buttonVr: {fileID: 0}
-  Endzone: {fileID: 0}
-  endZoneReached: 0
---- !u!114 &-5364315210025600511
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5157448439438530074}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1c2d4725a11097c4491f8f1ee06710e2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  compare_string_value: endZoneReached
+  m_StartingSingleGrabTransformers: []
+  m_StartingMultipleGrabTransformers: []
+  m_AddDefaultGrabTransformers: 1

@@ -92,7 +92,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 99454202187386664}
-  - component: {fileID: 6080114515469803917}
+  - component: {fileID: 8430914839904557808}
   m_Layer: 0
   m_Name: SpawnButton
   m_TagString: Untagged
@@ -118,7 +118,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &6080114515469803917
+--- !u!114 &8430914839904557808
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -127,12 +127,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 99454202187386665}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 07f465a93a242b747a04b7776b00a880, type: 3}
+  m_Script: {fileID: 11500000, guid: 7f51ed70f00ab7e42a895ff196813902, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  object_rows: {x: 2, y: 0, z: 0}
-  gameobject_spaceing: {x: 0.2, y: 0, z: 0}
-  copy: {fileID: 7267712543539295409, guid: 56d933f4c85506c4da00dcdd771c7e93, type: 3}
+  object_rows: {x: 0, y: 0, z: 0}
+  gameobject_spaceing: {x: 0, y: 0, z: 0}
+  copy: {fileID: 0}
 --- !u!1 &99454202494167035
 GameObject:
   m_ObjectHideFlags: 0
@@ -145,7 +145,7 @@ GameObject:
   - component: {fileID: 99454202494166982}
   - component: {fileID: 99454202494166983}
   - component: {fileID: 99454202494167032}
-  - component: {fileID: 99454202494167033}
+  - component: {fileID: 6043045432027288677}
   - component: {fileID: 99454202494166981}
   m_Layer: 0
   m_Name: Collider
@@ -294,7 +294,7 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &99454202494167033
+--- !u!114 &6043045432027288677
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -303,7 +303,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 99454202494167035}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1d85d791c255cec48af2668001756336, type: 3}
+  m_Script: {fileID: 11500000, guid: 6cdf3a2290ff323488cb6a1141e961d4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   button: {fileID: 99454202004322412}
@@ -312,19 +312,7 @@ MonoBehaviour:
       m_Calls: []
   onRelease:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 6080114515469803917}
-        m_TargetAssemblyTypeName: Set_up, Assembly-CSharp
-        m_MethodName: Set_up_method
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   isPressed: 0
 --- !u!114 &99454202494166981
 MonoBehaviour:
@@ -378,6 +366,8 @@ MonoBehaviour:
   m_Deactivated:
     m_PersistentCalls:
       m_Calls: []
+  m_StartingHoverFilters: []
+  m_StartingSelectFilters: []
   m_OnFirstHoverEntered:
     m_PersistentCalls:
       m_Calls: []
@@ -446,6 +436,9 @@ MonoBehaviour:
   m_ForceGravityOnDetach: 0
   m_RetainTransformParent: 1
   m_AttachPointCompatibilityMode: 0
+  m_StartingSingleGrabTransformers: []
+  m_StartingMultipleGrabTransformers: []
+  m_AddDefaultGrabTransformers: 1
 --- !u!1 &99454202533073348
 GameObject:
   m_ObjectHideFlags: 0
