@@ -6,7 +6,7 @@ using UnityEngine;
 
 public class RegisterController : MonoBehaviour
 {
-    [SerializeField] private string code = "12345";
+    [SerializeField] private string code = "2496";
     private string input = "";
 
     [SerializeField] private GameObject storage;
@@ -16,6 +16,7 @@ public class RegisterController : MonoBehaviour
     private float fraction = 0;
 
     bool canOpen = false;
+    bool canPush = true;
 
     private void Start()
     {
@@ -103,6 +104,7 @@ public class RegisterController : MonoBehaviour
 
     public void Pressed0()
     {
+        
         if (input.Length < 5)
         {
             input = input + "0";
@@ -116,8 +118,9 @@ public class RegisterController : MonoBehaviour
 
     public void PressedEnter()
     {
-        if (input.Length == 5)
-        {
+        Debug.Log(input);
+        if (input.Length == 4)
+        {           
             if (input == code)
             {
                 canOpen = true;
@@ -125,4 +128,5 @@ public class RegisterController : MonoBehaviour
             }
         }
     }
+
 }
