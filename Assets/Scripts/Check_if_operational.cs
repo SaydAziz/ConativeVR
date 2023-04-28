@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+//Check if push
 public class Check_if_operational : MonoBehaviour
 {
     public int check_has_been_complete = 0;
