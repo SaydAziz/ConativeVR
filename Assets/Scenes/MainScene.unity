@@ -12690,6 +12690,10 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 0.064833
       objectReference: {fileID: 0}
+    - target: {fileID: -3584497630037689987, guid: 5280eaa8e77490e4ba773da9c268a56d, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 6680a93f46d3e054a891fbcf50765404, type: 2}
     - target: {fileID: 919132149155446097, guid: 5280eaa8e77490e4ba773da9c268a56d, type: 3}
       propertyPath: m_Name
       value: CandyShop
@@ -12738,6 +12742,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.x
       value: 90
       objectReference: {fileID: 0}
+    - target: {fileID: 8247994413960396516, guid: 5280eaa8e77490e4ba773da9c268a56d, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 9e99021fb2a31924d94d1335457deb92, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5280eaa8e77490e4ba773da9c268a56d, type: 3}
 --- !u!4 &811262181 stripped
