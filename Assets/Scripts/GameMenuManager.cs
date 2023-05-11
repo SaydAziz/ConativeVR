@@ -8,6 +8,8 @@ public class GameMenuManager : MonoBehaviour
 
     public GameObject menu;
     public InputActionProperty showButton;
+    public GameObject rightRay;
+    public GameObject leftRay;
 
     public void Update()
     {
@@ -19,6 +21,8 @@ public class GameMenuManager : MonoBehaviour
         if (showButton.action.WasPressedThisFrame())
         {
             menu.SetActive(!menu.activeSelf);
+            rightRay.SetActive(!rightRay.activeSelf);
+            leftRay.SetActive(!leftRay.activeSelf);
         }
     }
 
