@@ -3,11 +3,18 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading;
 using UnityEngine;
+using TMPro;
 
 public class RegisterController : MonoBehaviour
 {
     [SerializeField] private string code = "2496";
     private string input = "";
+
+    public TMP_Text display;
+    private AudioSource audioSource;
+    public AudioClip keySound;
+
+
 
     [SerializeField] private GameObject storage;
     public float speed = .05f;
@@ -15,19 +22,29 @@ public class RegisterController : MonoBehaviour
     private Vector3 des;
     private float fraction = 0;
 
-    bool canOpen = false;
+    public bool canOpen = false;
     bool canPush = true;
 
     private void Start()
     {
         start = new Vector3(storage.transform.position.x, storage.transform.position.y, storage.transform.position.z);
         des = new Vector3(storage.transform.position.x + -.2f, storage.transform.position.y, storage.transform.position.z);
+
+        audioSource = gameObject.AddComponent<AudioSource>();
+        audioSource.spatialBlend = 1;
+        audioSource.volume = .1f;
+    }
+
+    private void Update()
+    {
+        display.SetText(input);
+
     }
 
 
     private void FixedUpdate()
     {
-        if (canOpen)
+        if (canOpen == true)
         {
             if (fraction < 1)
             {
@@ -114,6 +131,11 @@ public class RegisterController : MonoBehaviour
     public void PressedReset()
     {
         input = "";
+    }
+
+    public void PlaySound()
+    {
+        audioSource.PlayOneShot(keySound);
     }
 
     public void PressedEnter()
