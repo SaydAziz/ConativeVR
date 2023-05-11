@@ -1,14 +1,24 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class GameMenuManager : MonoBehaviour
 {
+
+    public GameObject menu;
+    public InputActionProperty showButton;
+
     public void Update()
     {
-        if (Input.anyKey)
+        //if (Input.anyKey)
+        //{
+        //    Debug.Log(Input.inputString);
+        //}
+
+        if (showButton.action.WasPressedThisFrame())
         {
-            Debug.Log(Input.inputString);
+            menu.SetActive(!menu.activeSelf);
         }
     }
 
@@ -22,4 +32,5 @@ public class GameMenuManager : MonoBehaviour
         Time.timeScale = 0;
 
     }
+
 }
