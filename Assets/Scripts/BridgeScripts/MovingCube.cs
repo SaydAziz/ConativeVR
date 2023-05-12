@@ -12,6 +12,10 @@ public class MovingCube : MonoBehaviour
     public GameObject Endzone;
     public GameObject sceneCanvas;
 
+
+    public GameObject rightRay;
+    public GameObject leftRay;
+
     public bool endZoneReached;
 
     // Start is called before the first frame update
@@ -51,6 +55,8 @@ public class MovingCube : MonoBehaviour
         
             this.gameObject.GetComponent<Single_has_been_completed>().activate_has_been_done();
         sceneCanvas.SetActive(true);
+        rightRay.SetActive(true);
+        leftRay.SetActive(true);
         Debug.Log("congratulations");
     }
 
