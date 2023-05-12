@@ -6,6 +6,9 @@ TagManager:
   tags:
   - Whiteboard
   - Endzone
+  - keyTag
+  - key
+  - check_op_array
   layers:
   - Default
   - TransparentFX

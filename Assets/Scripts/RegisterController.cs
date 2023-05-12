@@ -147,6 +147,7 @@ public class RegisterController : MonoBehaviour
             {
                 canOpen = true;
                 Debug.Log("Open");
+                this.gameObject.GetComponent<Single_has_been_completed>().activate_has_been_done();
             }
         }
     }
