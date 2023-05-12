@@ -10,6 +10,7 @@ public class MovingCube : MonoBehaviour
     public Transform Target;
     public ButtonVR buttonVr;
     public GameObject Endzone;
+    public GameObject sceneCanvas;
 
     public bool endZoneReached;
 
@@ -49,7 +50,8 @@ public class MovingCube : MonoBehaviour
     {
         
             this.gameObject.GetComponent<Single_has_been_completed>().activate_has_been_done();
-            Debug.Log("congratulations");
+        sceneCanvas.SetActive(true);
+        Debug.Log("congratulations");
     }
 
 

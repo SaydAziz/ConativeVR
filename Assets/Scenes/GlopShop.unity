@@ -32926,6 +32926,7 @@ MonoBehaviour:
   Target: {fileID: 880720257}
   buttonVr: {fileID: 1807624978}
   Endzone: {fileID: 880720256}
+  sceneCanvas: {fileID: 2038940723}
   endZoneReached: 0
 --- !u!114 &887459647
 MonoBehaviour:
